@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single_Responsibility_Principle", "Single_Responsibility_Principle\Single_Responsibility_Principle.csproj", "{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Single_Responsibility_Principle", "Single_Responsibility_Principle\Single_Responsibility_Principle.csproj", "{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Single Responsibility", "Single Responsibility", "{3DC90601-AA3A-40BD-807E-7814C75EBBCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenClosed Principles", "OpenClosed Principles", "{4CC8EF2E-4B23-48B4-A886-835FE951FE84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenClosed_Principle", "OpenClosed_Principle\OpenClosed_Principle.csproj", "{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C} = {3DC90601-AA3A-40BD-807E-7814C75EBBCC}
+		{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5} = {4CC8EF2E-4B23-48B4-A886-835FE951FE84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {091EE158-71B5-449D-8DCF-FEB997294625}
