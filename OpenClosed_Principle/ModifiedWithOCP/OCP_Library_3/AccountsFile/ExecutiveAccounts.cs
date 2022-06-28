@@ -1,5 +1,5 @@
 ﻿
-namespace OCP_Library_3
+namespace ModifiedWithOCP
 {
     internal class ExecutiveAccounts : IAccounts
     {
@@ -14,7 +14,7 @@ namespace OCP_Library_3
                 IsExecutive = true
             };
             return emp;
-        } 
+        }
     }
 }
 

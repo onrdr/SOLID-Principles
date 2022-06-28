@@ -1,5 +1,5 @@
 ﻿
-namespace OCP_Library_2
+namespace ModifiedWithoutOCP
 {
     public class EmployeeModel
     {

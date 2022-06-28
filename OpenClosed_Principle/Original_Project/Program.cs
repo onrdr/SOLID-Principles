@@ -1,10 +1,9 @@
-﻿using OCP_Library;
-
+﻿ 
 namespace Original_Project
 {
-    #region İnformation about the project and the process
+    #region Information about the project and the process
    /*  
-    * This is a basic project that process applicants into employee and then 
+    * This is a basic project that processes applicants into employee and then 
       creates Email Adresses for each of the employees.
 
     * After a while, owner of the company asks for a change that they want to have a way 

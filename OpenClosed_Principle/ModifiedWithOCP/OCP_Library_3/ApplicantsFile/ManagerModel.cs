@@ -1,5 +1,5 @@
 ﻿
-namespace OCP_Library_3
+namespace ModifiedWithOCP
 {
     internal class ManagerModel : IApplicantModel
     {
