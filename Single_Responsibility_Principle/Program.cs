@@ -19,9 +19,9 @@ namespace Single_Responsibility_Principle
 
             EmailOluşturucu.Oluştur(person);
 
-            Mesajlar.UygulamaÇıkış();
-
+            Mesajlar.UygulamaÇıkış(); 
         }
+
 
 
 
