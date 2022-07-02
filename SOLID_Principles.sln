@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenClosed_Principle", "Ope
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Liskov Substitution Principle", "3. Liskov Substitution Principle", "{32949780-F06F-4762-AE82-50E3ADD0F587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov_Substitution_Principle", "Liskov_Substitution_Principle\Liskov_Substitution_Principle.csproj", "{A6C11771-00FB-4253-8670-4D433DE368B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liskov_Substitution_Principle", "Liskov_Substitution_Principle\Liskov_Substitution_Principle.csproj", "{A6C11771-00FB-4253-8670-4D433DE368B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Interface Segregation Principle", "4. Interface Segregation Principle", "{C7717439-7246-46C8-98FE-E03151E70E8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Dependency Inversion Principle", "5. Dependency Inversion Principle", "{A328D439-84F6-4FD6-9159-C77A84AAC823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_Segregation_Principle", "Interface_Segregation_Principle\Interface_Segregation_Principle.csproj", "{FFB017E5-F89B-4279-9887-DE5FC7F16A87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,10 @@ Global
 		{A6C11771-00FB-4253-8670-4D433DE368B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C11771-00FB-4253-8670-4D433DE368B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C11771-00FB-4253-8670-4D433DE368B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB017E5-F89B-4279-9887-DE5FC7F16A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB017E5-F89B-4279-9887-DE5FC7F16A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB017E5-F89B-4279-9887-DE5FC7F16A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB017E5-F89B-4279-9887-DE5FC7F16A87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +51,7 @@ Global
 		{D0C7E7FE-5E84-4C3B-B538-C034691F5B9C} = {3DC90601-AA3A-40BD-807E-7814C75EBBCC}
 		{993C8A27-EA4C-45F0-B776-4ADFF0F5B4B5} = {4CC8EF2E-4B23-48B4-A886-835FE951FE84}
 		{A6C11771-00FB-4253-8670-4D433DE368B4} = {32949780-F06F-4762-AE82-50E3ADD0F587}
+		{FFB017E5-F89B-4279-9887-DE5FC7F16A87} = {C7717439-7246-46C8-98FE-E03151E70E8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {091EE158-71B5-449D-8DCF-FEB997294625}

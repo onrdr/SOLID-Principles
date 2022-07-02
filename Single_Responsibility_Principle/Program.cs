@@ -5,69 +5,69 @@ namespace Single_Responsibility_Principle
     {
         static void Main(string[] args)
         {
-            Mesajlar.UygulamaGiriş();
+            Messages.WelcomeMessage();
 
-            Person person = KişiBilgisi.BilgileriGirKişiyiGeriAl();
+            Person person = PersonInfoCapture.Capture();
 
-            bool kontrol = KişiKontol.KişiGeçerliMi(person);
+            bool isPersonValid = PersonValidator.Validate(person);
 
-            if (!kontrol)
+            if (!isPersonValid)
             {
-                Mesajlar.UygulamaÇıkış();
+                Messages.EndApplication();
                 return;
             }
 
-            EmailOluşturucu.Oluştur(person);
+            EmailGenerator.Create(person);
 
-            Mesajlar.UygulamaÇıkış(); 
+            Messages.EndApplication(); 
         }
 
 
 
 
 
-        public static void EskiMainMethod()
+        public static void OldMainMethod()
         {
-            #region Uygulama Başlığı 
-            Console.WriteLine("BT Akademi Single Responsibility Principle Örneği !!!\n");
+            #region Application Heading
+            Console.WriteLine("Welcome to Single Responsibility Principle Example\n");
             #endregion
 
 
-            #region Kişi Bilgisi İste
+            #region Ask for person information
             Person person = new Person();
 
-            Console.Write("Lütfen İsminizi Girin: ");
+            Console.Write("Please enter your first name: ");
             person.FirstName = Console.ReadLine();
 
-            Console.Write("Lütfen Soyisminizi Girin: ");
+            Console.Write("Please enter your last name: ");
             person.LastName = Console.ReadLine();
             #endregion
 
 
-            #region İsim ve Soyismin geçerli olup olmadığını kontrol et
+            #region Validate person information
             if (string.IsNullOrEmpty(person.FirstName) || person.FirstName.StartsWith(" "))
             {
-                Console.WriteLine("Geçerli Bir İsim Girmediniz");
+                Console.WriteLine("First name is not valid");
                 Console.ReadKey();
                 return;
             }
             if (string.IsNullOrEmpty(person.FirstName) || person.LastName.StartsWith(" "))
             {
-                Console.WriteLine("Geçerli Bir Soyisim Girmediniz");
+                Console.WriteLine("Last name is not valid");
                 Console.ReadKey();
                 return;
             }
             #endregion
 
 
-            #region Eğer geçerliyse email adresi oluştur 
+            #region If person info is valid => create email adress 
             string emailDraft = (person.FirstName.Substring(0, 1) + person.LastName).ToLower();
-            person.EmailAdress = emailDraft + "@btakademi.com";
-            Console.WriteLine($"Mail Adresiniz Oluşturuldu: {person.EmailAdress}");
+            person.EmailAdress = emailDraft + "company.com";
+            Console.WriteLine($"Email Adress has been created: {person.EmailAdress}");
             #endregion
+
 
             Console.ReadKey();
         }
-    }
-
+    } 
 }
