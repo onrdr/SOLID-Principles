@@ -1,40 +1,33 @@
 ﻿
-namespace Single_Responsibility_Principle
+namespace Original_Project
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Process()
         {
-            Messages.WelcomeMessage();
 
-            Person person = PersonInfoCapture.Capture();
+            /*
+             * The Problem with this program is that it has so much responsibilities such as : 
 
-            bool isPersonValid = PersonValidator.Validate(person);
+             ==> First responsibility : Application Heading Region     
 
-            if (!isPersonValid)
-            {
-                Messages.EndApplication();
-                return;
-            }
+             ==> Second responsibility : Ask for person information  
 
-            EmailGenerator.Create(person);
+             ==> Third responsibility : Validate person information
 
-            Messages.EndApplication(); 
-        }
+             ==> Forth responsibility : If person info is valid => create email adress  
 
+             * Each responsibilities above should be done by a seperate class : 
+               Look at modified version in ModifiedWithSRP folder int this project
 
-
-
-
-        public static void OldMainMethod()
-        {
+             */
             #region Application Heading
             Console.WriteLine("Welcome to Single Responsibility Principle Example\n");
             #endregion
 
 
             #region Ask for person information
-            Person person = new Person();
+            Person person = new();
 
             Console.Write("Please enter your first name: ");
             person.FirstName = Console.ReadLine();
@@ -61,13 +54,17 @@ namespace Single_Responsibility_Principle
 
 
             #region If person info is valid => create email adress 
-            string emailDraft = (person.FirstName.Substring(0, 1) + person.LastName).ToLower();
-            person.EmailAdress = emailDraft + "company.com";
+            string emailDraft = $"{person.FirstName[..1]}.{person.LastName}";
+
+            person.EmailAdress = $"{emailDraft.ToLower()}@company.com";
+
             Console.WriteLine($"Email Adress has been created: {person.EmailAdress}");
             #endregion
 
 
             Console.ReadKey();
         }
+
+         
     } 
 }

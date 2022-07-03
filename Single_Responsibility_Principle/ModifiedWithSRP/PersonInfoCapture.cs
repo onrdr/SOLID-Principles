@@ -1,11 +1,11 @@
-﻿ 
-namespace Single_Responsibility_Principle
+﻿
+namespace ModifiedWithSRP
 {
     public class PersonInfoCapture
     {
         public static Person Capture()
         {
-            Person person = new Person();
+            Person person = new();
 
             Console.Write("Please enter your first name: ");
             person.FirstName = Console.ReadLine();
@@ -13,7 +13,7 @@ namespace Single_Responsibility_Principle
             Console.Write("Please enter your last name: ");
             person.LastName = Console.ReadLine();
 
-            return person; 
-        } 
-    } 
+            return person;
+        }
+    }
 }

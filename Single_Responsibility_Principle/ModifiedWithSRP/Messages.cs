@@ -1,6 +1,5 @@
 ﻿
-
-namespace Single_Responsibility_Principle
+namespace ModifiedWithSRP
 {
     public class Messages
     {
@@ -16,13 +15,13 @@ namespace Single_Responsibility_Principle
                    "\n\nPress any key to exit");
             Console.ReadKey();
         }
-        public static void ValidationError(string fieldAdi)
+        public static void ValidationError(string fieldName)
         {
-            Console.WriteLine($"{fieldAdi} is not valid");
+            Console.WriteLine($"{fieldName} is not valid");
         }
         public static void EmailGeneratorSuccess(Person person)
         {
             Console.WriteLine($"Email Adress has been created: {person.EmailAdress}");
         }
-    } 
+    }
 }

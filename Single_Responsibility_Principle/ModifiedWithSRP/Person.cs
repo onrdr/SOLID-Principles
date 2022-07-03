@@ -1,5 +1,5 @@
-﻿ 
-namespace Single_Responsibility_Principle
+﻿
+namespace ModifiedWithSRP
 {
     public class Person
     {
